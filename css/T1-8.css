@@ -1,7 +1,8 @@
 /*使用嵌套div
 网格间隙使用外部div的padding隔开
 内部div.content加border
-使得代码兼容移动端*/
+使得代码兼容移动端
+可参考http://j4n.co/blog/Creating-your-own-css-grid-system*/
 @media (min-width: 769px) {
 	.col-f-1{
 		width:  8.33333333%;
