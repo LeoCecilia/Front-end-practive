@@ -1,3 +1,7 @@
+/*使用嵌套div
+网格间隙使用外部div的padding隔开
+内部div.content加border
+使得代码兼容移动端*/
 @media (min-width: 769px) {
 	.col-f-1{
 		width:  8.33333333%;
