@@ -1,3 +1,5 @@
+/* 初始设定不要换行
+box-sizing:border-box; */
 *{
 	
 	-webkit-box-sizing: border-box;
