@@ -91,7 +91,7 @@ function btnHandle() {
       btn = document.getElementById('sort-btn');
   aqiData = sortAqiData(aqiData);
   render(aqiData);
-  btn.disabled = true;
+  btn.disabled = true;//禁用按钮,防止创建多个数组
 }
 
 
