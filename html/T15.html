@@ -33,6 +33,10 @@
  * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
  * 返回一个数组，格式见函数中示例
  * 尚未实现浏览器兼容，没有用jquery,最好是将所有变量放进一个全局变量当中,以避免冲突！
+
+ * 尚未学会使用正则表达式
+ * 未知join()在此处的用法 document.getElementById('resort').innerHTML = newlist.join("");
+  [能起到disabled的效果]
  */
  var $ = function (id) {
          return document.getElementById(id);
@@ -44,10 +48,12 @@
 
   function getData() {
     for (var i=0 ;i<ul.childElementCount; i++){
-        var li = ul.children[i],           
+          var li = ul.children[i],           
+            //可用正则表达式
+            //var city = originlist[i].innerText.match(/(.*?)空气/)[1];
             strCity = li.innerHTML.split('空气质量：' )[0],//split返回一个数组。
             num = Number(li.children[0].innerHTML);
-        data.push([strCity, num]);//转变为数组形式
+          data.push([strCity, num]);//转变为数组形式
     }
 
     return data;
