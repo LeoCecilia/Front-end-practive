@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	 <h3>污染城市列表</h3>
+ 	 <ul id="aqi-list">
+ 	 </ul>
+
+</body>
+	<script type="text/javascript">
+		var list = [
+			["北京",90],
+			['广州',20],
+			['福州',50],
+			['上海',90],
+			['成都',20],
+			['西安',80]
+		];
+		(function(){//匿名函数
+			var ul = document.getElementById('aqi-list'),
+				arr = ['一','二','三','四','五'];
+				ul.innerHTML = '';
+
+			//常规方法
+			/*list.sort(function(a,b){
+				return b[1]-a[1];
+			});
+			ul.innerHTML = '';
+			list.forEach(function(element, index) {//iterable类型循环
+				if (element[1]>60) {
+					var li = document.createElement("li");
+					li.innerHTML = '第'+ arr[index] +'名: '+element[0]+' '+element[1];
+					ul.appendChild(li);
+				}
+			});*/
+
+			//加上filter拦截器
+			list.filter(function (x) {
+				 	return x[1] > 60;
+			    }).sort(function(a,b){
+					return b[1] - a[1];
+				}).forEach(function (element, index) {
+					var li = document.createElement("li");
+					li.innerHTML = '第'+ arr[index] +'名: '+element[0]+' '+element[1];
+					ul.appendChild(li);
+				});
+
+			//for循环
+			/*for(var i = 0; i < list.length; i++){
+				if (list[i][1]>60) {
+					var li = document.createElement("li");
+					li.innerHTML = '第'+ arr[i] +'名: '+list[i][0]+' '+list[i][1];
+					ul.appendChild(li);
+				}
+			}*/
+
+		})();
+	</script>
+</html>

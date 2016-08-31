@@ -17,7 +17,7 @@
 		var handler = function () {
 			var a = $('api-input').value;
 			var num = Number(a.trim())?a:'请填写数值';//不建议使用formatInt(),不能保留小数
-			if(!isNaN(a)&&(a>=0)&&(a<=450)){
+			if(!isNaN(a)&&(a>=0)&&(a<=500)){
 				$('api-display').innerHTML = num;
 			}else {
 				alert($("api-input").value + '不是一个有效的AQI数值，应输入0~450的数值。');
