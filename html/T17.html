@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.aqi-chart-wrap{
+			display: flex;/* 用flex会方便很多 */
+			width: 90%;
+			height: 530px;
+			justify-content: center;
+			align-items: flex-end;
+			align-content: center;
+			margin: 10px auto;
+			padding: 10px;
+		}
+		.aqi-chart-wrap div {	
+			flex: 1;
+		}
+		select{
+			outline: none;
+		}
+	</style>
+</head>
+
+<body>
+	<fieldset id="form-gra-time" >
+    <legend>请选择日期粒度：</legend>
+    <label>日<input name="gra-time" value="day" type="radio" checked="checked" id="gra-time"></label>
+    <label>周<input name="gra-time" value="week" type="radio" id="gra-time">
+    </label>
+    <label>月<input name="gra-time" value="month" type="radio" id="gra-time">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>请选择查看的城市：</legend>
+    <select id="city-select">
+      <option>北京</option>
+    </select>
+  </fieldset>
+
+  <div class="aqi-chart-wrap">
+  </div>
+</body>
+<script src="../js/T17.js"></script>
+</html>
