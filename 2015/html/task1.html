@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		fieldset{
+			border: none;
+			margin: 0;
+			margin-top: 15px;
+			padding: 0;
+			position: relative;
+		}
+		textarea{
+			/* resize: none; */
+			outline: none;
+			float: left;
+		}
+		p{
+			background: #e53935;
+			color: #fff;
+			padding: 18px;
+			width: 205px;
+			height: 85px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			
+		}
+		button{
+			border: none;
+			background: #e53935;
+			color: #fff;
+			padding: 5px;
+			outline: none;
+			cursor: pointer;
+			float: left;
+			position: absolute;
+			bottom: 0;
+		}
+		button:hover{
+			background: #200d0c;
+		}
+		ul{
+			padding-left: 0;
+		}
+		ul li{
+			list-style: none;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>处理兴趣列表</h2>
+    <div>允许“换行、空格（全角/半角）、逗号（全角/半角）、顿号、分号、句号（全角/半角）”进行分割</div>
+	<fieldset>
+		<textarea type="text" id="userInput" style="width: 200px;height: 200px;"></textarea> 
+		<button id="btn">提交</button>
+	</fieldset>
+	 <p>请输入10个以内的爱好且至少输入一个</p>
+	<ul id="userOutput"></ul>
+</body>
+<script src="../js/util.js"></script>
+<script src="../js/task1.js"></script>
+</html>
