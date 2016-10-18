@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		fieldset{
+			text-align: center;
+		}
+		#show{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			margin-top: 20px;
+			display: flex;
+			align-items: flex-end;
+			height: 350px;
+		}
+		#show div{
+			cursor: pointer;
+			width: 15px;
+			background: #99b4ce;
+			margin-right: 10px;
+			transition: all,1.8s;
+
+		}
+
+		input{
+			outline: none;
+		}
+		input[type='button']{
+			border: none;
+			background: #bec3cb;
+			color: #fff;
+			padding: 3px 5px;
+			cursor: pointer;
+		}
+		input[type='button']:hover{
+			background: #16324a;
+		}
+	</style>
+</head>
+<body>
+	<fieldset id="input">
+		<input type="text" id="integer">
+		<input type="button" value="左侧入">
+		<input type="button" value="右侧入">
+		<input type="button" value="左侧出">
+		<input type="button" value="右侧出">
+		<input type="button" value="冒泡排序">
+		<input type="button" value="快速排序">		
+		<input type="button" value="随机">
+
+	</fieldset>
+	<div id="show">
+		
+	</div>
+</body>
+<script src="../js/T19.js"></script>
+</html>

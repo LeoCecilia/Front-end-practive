@@ -22,15 +22,15 @@
 			}else {
 				alert($("api-input").value + '不是一个有效的AQI数值，应输入0~450的数值。');
 			}
-		}
+		};
 		$('button').onclick = function(event){
 			handler();
-		}
+		};
 		$('api-input').onkeyup = function(event){
 			if (event.keyCode === 13) {
 					handler();
 			}
-		}
+		};
 	})();
 </script>
 </html>

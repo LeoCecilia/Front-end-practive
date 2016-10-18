@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#root{
+			-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+    		justify-content: space-between;
+			padding: 20px;
+			display: flex;
+			border: 2px solid #EA384D;
+			width: 1000px;
+			height: 300px;
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		background: #fff;
+		}
+		.child_1{
+			display: flex;
+			padding: 20px;
+			border: 2px solid #141E30;
+			width: 450px;
+    		justify-content: space-between;
+    		background: #fff;    		
+		}
+		.child_2{
+			display: flex;
+			padding: 20px;
+			border: 2px solid #EA384D;
+			width: 170px;
+    		justify-content: space-between;
+    		background: #fff;
+		}
+		.child_3{
+			display: flex;
+			padding: 20px;
+			border: 2px solid #141E30;	
+			width: 35px;
+    		justify-content: space-between;	
+    		background: #fff;    		
+		}
+		fieldset{
+			text-align: center;
+		}
+		button{
+			border-radius: 10px;
+			border: none;
+			background: #aaa;
+			color: #fff;
+			padding: 5px 10px;
+			cursor: pointer;
+			outline: none;
+			font-size: 18px;	
+			margin-right: 10px;	
+		}
+		button:hover{
+			background:#141E30;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<button>前序</button>
+		<button>中序</button>
+		<button>后序</button>
+	</fieldset>
+	<div id="root">
+		<div class="child_1">
+			<div class="child_2">
+				<div class="child_3"></div>
+				<div class="child_3"></div>
+			</div>
+			<div class="child_2">
+				<div class="child_3"></div>
+				<div class="child_3"></div>
+			</div>
+		</div>
+		<div class="child_1">
+			<div class="child_2">
+				<div class="child_3"></div>
+				<div class="child_3"></div>
+			</div>
+			<div class="child_2">
+				<div class="child_3"></div>
+				<div class="child_3"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/T22.js"></script>
+</html>

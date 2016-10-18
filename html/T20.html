@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#show{
+			margin-top: 20px;
+		}
+		#show div{
+			display: inline-block;
+			font-size: 30px;
+			text-align: center;
+			padding: 0 15px;
+			margin: 2px 10px 2px 0;
+			height: 50px;
+			line-height: 50px;
+			background: #16324a;
+			color: #fff;
+			cursor: pointer;
+		}
+		#show div span{
+			color: #f00;
+		}
+		input{
+			outline: none;
+		}
+		input[type='button']{
+			border: none;
+			background: #bec3cb;
+			color: #fff;
+			padding: 3px 5px;
+			cursor: pointer;
+		}
+		input[type='button']:hover{
+			background: #16324a;
+		}
+	</style>
+</head>
+<body>
+	<fieldset id="input">
+		<textarea type= 'text' id="text"></textarea>
+		<input type="button" value="左侧入">
+		<input type="button" value="右侧入">
+		<input type="button" value="左侧出">
+		<input type="button" value="右侧出">
+		<input type= 'text' id="search" placeholder="search"></input>
+		<input type="button" value='模糊搜索'></input>
+	</fieldset>
+	<div id="show"></div>
+</body>
+<script src="../js/T20.js"></script>
+</html>
