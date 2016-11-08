@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task27</title>
+	<link rel="stylesheet" type="text/css" href="../css/T28.css">
+</head>
+<body>
+<fieldset class="commandPanel">
+			<legend>Commander panel</legend>
+			<ul>
+				<li class="wrapper" name="0">
+					<span class="name">spaceship No.1:&nbsp;&nbsp;</span>
+					<span class="power">动力系统选择&nbsp;</span>
+					<select class="powerSystem">
+						<option >前进号(速率3%/s,能耗5%/s)</option>
+						<option>奔腾号(速率5%/s,能耗7%/s)</option>
+						<option>超速号(速率8%/s,能耗9%/s)</option>
+					</select>
+					<span class="energy">&nbsp;能源系统选择&nbsp;</span>
+					<select class="energySystem">
+						<option>劲量型(补充能源速率2%/s)</option>
+						<option>光能型(补充能源速率3%/s)</option>
+						<option>永久型(补充能源速率5%/s)</option>
+					</select>					
+					<button class="lanuch" name="lanuch">lanuch</button>
+					<button class="fly" name="fly">fly</button>
+					<button class="stop" name="stop">stop</button>
+					<button class="destroy" name="destroy">destroy</button>					
+				</li>
+				<li class="wrapper" name='1'>
+					<span class="name">spaceship No.2:&nbsp;&nbsp;</span>
+					<span class="power">动力系统选择&nbsp;</span>
+					<select class="powerSystem">
+						<option>前进号(速率3%/s,能耗5%/s)</option>
+						<option>奔腾号(速率5%/s,能耗7%/s)</option>
+						<option>超速号(速率8%/s,能耗9%/s)</option>
+					</select>
+					<span class="energy">&nbsp;能源系统选择&nbsp;</span>
+					<select class="energySystem">
+						<option>劲量型(补充能源速率2%/s)</option>
+						<option>光能型(补充能源速率3%/s)</option>
+						<option>永久型(补充能源速率5%/s)</option>
+					</select>
+					<button class="lanuch" name="lanuch">lanuch</button>
+					<button class="fly" name="fly">fly</button>
+					<button class="stop" name="stop">stop</button>
+					<button class="destroy" name="destroy">destroy</button>
+				</li>
+				<li class="wrapper" name='2'>
+					<span class="name">spaceship No.3:&nbsp;&nbsp;</span>
+					<span class="power">动力系统选择&nbsp;</span>
+					<select class="powerSystem">
+						<option>前进号(速率3%/s,能耗5%/s)</option>
+						<option>奔腾号(速率5%/s,能耗7%/s)</option>
+						<option>超速号(速率8%/s,能耗9%/s)</option>
+					</select>
+					<span class="energy">&nbsp;能源系统选择&nbsp;</span>
+					<select class="energySystem">
+						<option>劲量型(补充能源速率2%/s)</option>
+						<option>光能型(补充能源速率3%/s)</option>
+						<option>永久型(补充能源速率5%/s)</option>
+					</select>
+					<button class="lanuch" name="lanuch">lanuch</button>
+					<button class="fly" name="fly">fly</button>
+					<button class="stop" name="stop">stop</button>
+					<button class="destroy" name="destroy">destroy</button>
+				</li>
+				<li class="wrapper" name='3'>
+					<span class="name">spaceship No.4:&nbsp;&nbsp;</span>
+					<span class="power">动力系统选择&nbsp;</span>
+					<select class="powerSystem">
+						<option>前进号(速率3%/s,能耗5%/s)</option>
+						<option>奔腾号(速率5%/s,能耗7%/s)</option>
+						<option>超速号(速率8%/s,能耗9%/s)</option>
+					</select>
+					<span class="energy">&nbsp;能源系统选择&nbsp;</span>
+					<select class="energySystem">
+						<option>劲量型(补充能源速率2%/s)</option>
+						<option>光能型(补充能源速率3%/s)</option>
+						<option>永久型(补充能源速率5%/s)</option>
+					</select>
+					<button class="lanuch" name="lanuch">lanuch</button>
+					<button class="fly" name="fly">fly</button>
+					<button class="stop" name="stop">stop</button>
+					<button class="destroy" name="destroy">destroy</button>
+				</li>
+			</ul>
+		</fieldset>
+	<div class="container">
+		<div class="console">
+			<h2>Console Log</h2>
+			<ul></ul>
+		</div>
+		<div class="graphPanel">
+			<canvas id="background"></canvas>
+			<canvas id="screen"></canvas>
+		</div>
+		<table class="data-table" style="display: table">
+			<tr>
+				<th>飞船</th>
+				<th>动力系统</th>
+				<th>能源系统</th>
+				<th>当前飞行状态</th>
+				<th>剩余能耗</th>
+			</tr>
+		</table>
+	</div>
+		
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/T28.js"></script>
+</html>
